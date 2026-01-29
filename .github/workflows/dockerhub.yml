@@ -24,7 +24,7 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v5
         with:
-          context: backend/package.json
+          context: backend
           file: backend/Dockerfile
           push: true
           tags: |
